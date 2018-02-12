@@ -1,6 +1,6 @@
 {
-  "name": "schemaimport",
-  "version": "1.0.0",
+  "name": "m-import",
+  "version": "1.0.1",
   "description": "auto loader js , json, yaml, toml file",
   "main": "dist/index.js",
   "types": "index.d.ts",
