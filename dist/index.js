@@ -30,7 +30,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var load = function load(parser) {
     return R.pipe(_path.normalize, _fsExtra2.default.readFileSync, parser);
 };
-var loadYaml = load(_jsYaml2.default.safeLoad);
+var loadYaml = load(_jsYaml2.default.load);
 var loadToml = load(_toml2.default.parse);
 var loadJsonOrJs = function loadJsonOrJs(path) {
     var mod = require(path);

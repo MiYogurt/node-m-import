@@ -1,6 +1,6 @@
 {
   "name": "m-import",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "auto loader js , json, yaml, toml file",
   "main": "dist/index.js",
   "types": "index.d.ts",

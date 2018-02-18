@@ -5,7 +5,7 @@ import { normalize } from 'path'
 import * as R from 'ramda'
 
 const load = (parser) => R.pipe(normalize, fs.readFileSync, parser);
-const loadYaml = load(yaml.safeLoad)
+const loadYaml = load(yaml.load)
 const loadToml = load(toml.parse)
 const loadJsonOrJs = (path) => {
     const mod = require(path);

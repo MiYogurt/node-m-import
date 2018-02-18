@@ -45,11 +45,13 @@ describe('load by toml', () => {
 describe('load by yml', () => {
     it('should equal', () => {
         const target = si(resolve(__dirname, 'source/a.yml'))
-        assert.deepStrictEqual(source, target)
+        const msg = target.config.function()
+        assert.equal(msg, 'Wow! JS-YAML Rocks!')
     });
     it('should equal', () => {
         const target = loadYaml(resolve(__dirname, 'source/a.yml'))
-        assert.deepStrictEqual(source, target)
+        const msg = target.config.function()
+        assert.equal(msg, 'Wow! JS-YAML Rocks!')
     });
 })
 

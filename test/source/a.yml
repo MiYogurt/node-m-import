@@ -1,2 +1,6 @@
 config:
   name: "yugo"
+  function: !!js/function >
+    function foobar() {
+      return 'Wow! JS-YAML Rocks!';
+    }
